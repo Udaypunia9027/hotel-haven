@@ -50,7 +50,7 @@ body {
   font-size: 20px;
 }
 .nav ul li a:hover {
-  background-color: blueviolet;
+  background-color: blue;
   color: white;
   transition: 0.5s;
   padding: 10px 15px;
@@ -71,7 +71,7 @@ body {
   border-radius: 10px;
 }
 .Register-signin button:hover {
-  background-color: blueviolet;
+  background-color: blue;
   color: white;
 }
 
@@ -146,7 +146,7 @@ body {
   border: 3px solid rgb(126, 122, 122);
 }
 .Search input:hover {
-  background-color: rgba(235, 3, 184, 0.852);
+  background-color: blue;
   color: white;
   transition: 0.5s;
   height: 50px;
@@ -159,7 +159,7 @@ body {
   border: 3px solid rgb(126, 122, 122);
 }
 .Search select:hover {
-  background-color: rgba(235, 3, 184, 0.852);
+  background-color: blue;
   color: white;
   transition: 0.5s;
   height: 50px;
@@ -177,7 +177,7 @@ body {
 .Search button:hover {
   height: 80px;
   width: 200px;
-  background-color: rgba(92, 3, 235, 0.852);
+  background-color: blue;
   color: white;
   transition: 0.5s;
   font-size: 20px;
