@@ -1,0 +1,19 @@
+@mixin button_height_width($bgcolor, $color, $shadow) {
+    height: 40px;
+    width: 100px;
+    background-color: $bgcolor;
+    color: $color;
+    box-shadow: 2px 3px 5px $shadow;
+    font-size: larger;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+@mixin search-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+}

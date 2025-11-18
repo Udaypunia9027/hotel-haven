@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./Images/Favicon.png">
+    <title>Hotel Haven</title>
+</head>
+
+<body>
+    <div class="Navbar">
+        <div class="Logo-and-Brand">
+            <div class="Logo"></div>
+            <div class="brand-name">Hotel Haven</div>
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="Destinations">Destinations</a></li>
+                <li><a href="Deals">Deals</a></li>
+                <li><a href="Business">Business Travel</a></li>
+                <li><a href="Support">Support</a></li>
+            </ul>
+        </div>
+        <div class="Register-signin">
+            <button class="Button-signin">Sign In</button>
+            <button class="Button-Register">Register</button>
+        </div>
+    </div>
+    <div class="header">
+        <div class="header-img">
+            <h1>Discover Top Hotels, Compare Deals, and Book Your Perfect Stay</h1>
+            <p>200,000+ hotels worldwide with best price guarantee</p>
+        </div>
+    </div>
+    <div class="Search">
+        <div class="location">
+            <label for="location">Location</label>
+            <select name="location" id="location">
+                <option value="Choose City" disabled selected>Choose City 📌</option>
+                <option value="Delhi">Delhi</option>
+                <option value="Delhi">Gurgaon</option>
+                <option value="Delhi">Pune</option>
+                <option value="Delhi">Hyderabad</option>
+                <option value="Delhi">Guhwati</option>
+            </select>
+        </div>
+        <div class="check-in">
+            <label for="check-in">Check In</label>
+            <input type="date">
+        </div>
+        <div class="checkout">
+            <label for="check-out">Check Out</label>
+            <input type="date">
+        </div>
+        <div class="Guests">
+            <label for="Guests">Guests</label>
+            <input type="number" min="1" max="20">
+        </div>
+        <div class="Search-hotels">
+            <button>🔍Search Hotels</button>
+        </div>
+    </div>
+</body>
+
+</html>

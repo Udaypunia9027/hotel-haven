@@ -1,0 +1,188 @@
+@import "_var.scss";
+@import "_mixin.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Momo Trust Display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+}
+
+.Navbar {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    background-color: $background;
+}
+
+.Logo-and-Brand {
+    display: flex;
+    align-items: center;
+
+    .Logo {
+        background-image: url("./Images/Favicon.png");
+        height: 50px;
+        width: 50px;
+        background-size: cover;
+    }
+
+    .brand-name {
+        font-size: 30px;
+        font-weight: 800;
+        color: $primary-color;
+    }
+}
+
+.nav {
+    margin-top: 15px;
+
+    ul {
+        display: flex;
+        gap: 30px;
+
+        li {
+            list-style-type: none;
+
+            a {
+                text-decoration-line: none;
+                color: $primary-color;
+                font-size: 20px;
+
+                &:hover {
+                    background-color: blueviolet;
+                    color: $primary-color;
+                    transition: 0.5s;
+                    padding: 10px 15px;
+
+                }
+            }
+        }
+    }
+}
+
+.Register-signin {
+    margin: 5px;
+
+    button {
+        @include button_height_width(white, grey, grey);
+    }
+
+    & button:hover {
+        background-color: blueviolet;
+        color: $primary-color;
+    }
+}
+
+.header {
+    .header-img {
+        background-image: url("./Images/Header.jpg");
+        background-size: cover;
+        background-position: center;
+        height: 600px;
+        place-content: center;
+        text-align: center;
+        position: relative;
+
+        h1 {
+            color: $primary-color;
+            font-size: 80px;
+        }
+
+        p {
+            margin-top: 50px;
+            color: $primary-color;
+            font-size: 30px;
+            -webkit-text-stroke: 1px blueviolet
+        }
+    }
+}
+
+.Search {
+    display: flex;
+    background-color: rgba(186, 22, 68, 0.996);
+    height: 100px;
+    width: 1000px;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: $primary-color;
+    position: absolute;
+    place-self: center;
+    top: 600px;
+    box-shadow: 2px 3px 5px rgb(20, 18, 18);
+    border: 5px solid grey;
+
+    .location {
+        @include search-bar;
+    }
+
+    .check-in {
+        @include search-bar;
+    }
+
+    .checkout {
+        @include search-bar;
+    }
+
+    .Guests {
+        @include search-bar;
+    }
+
+    input {
+        height: 40px;
+        width: 110px;
+        border-radius: 10px;
+        border: 3px solid rgb(126, 122, 122);
+
+        &:hover {
+            background-color: rgba(235, 3, 184, 0.852);
+            color: $primary-color;
+            transition: 0.5s;
+            height: 50px;
+            width: 150px;
+        }
+    }
+
+    select {
+        height: 40px;
+        width: 110px;
+        border-radius: 10px;
+        border: 3px solid rgb(126, 122, 122);
+
+        &:hover {
+            background-color: rgba(235, 3, 184, 0.852);
+            color: $primary-color;
+            transition: 0.5s;
+            height: 50px;
+            width: 150px;
+        }
+    }
+
+    button {
+        height: 50px;
+        width: 150px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        border: 3px solid rgb(126, 122, 122);
+
+        &:hover {
+            height: 80px;
+            width: 200px;
+            background-color: rgba(92, 3, 235, 0.852);
+            color: $primary-color;
+            transition: 0.5s;
+            font-size: 20px;
+            border-radius: 50px;
+            border: 5px solid black;
+        }
+    }
+}
