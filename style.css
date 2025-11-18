@@ -273,9 +273,19 @@ body {
 }
 .cards .subcards .pricing {
   display: flex;
+  justify-content: space-around;
   margin: 20px 20px;
-  gap: 100px;
+  gap: 20px;
 }
 .cards .subcards .pricing span {
   font-size: 30px;
+}
+.cards .subcards .pricing button {
+  height: 50px;
+  width: 100px;
+  border-radius: 50px;
+  background-color: #93a5cf;
+  color: white;
+  font-size: 15px;
+  font-weight: 800;
 }/*# sourceMappingURL=style.css.map */
