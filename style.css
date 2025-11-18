@@ -97,7 +97,7 @@ body {
 
 .Search {
   display: flex;
-  background-color: rgba(186, 22, 68, 0.996);
+  background-color: rgba(220, 8, 107, 0.5);
   height: 100px;
   width: 1000px;
   gap: 50px;
@@ -110,6 +110,12 @@ body {
   top: 600px;
   box-shadow: 2px 3px 5px rgb(20, 18, 18);
   border: 5px solid grey;
+  cursor: pointer;
+}
+.Search:hover {
+  padding: 50px 50px;
+  transition: 0.6s;
+  background-color: rgba(220, 8, 107, 0.8);
 }
 .Search .location {
   display: flex;
@@ -144,6 +150,8 @@ body {
   width: 110px;
   border-radius: 10px;
   border: 3px solid rgb(126, 122, 122);
+  background-color: rgba(170, 86, 7, 0.399);
+  color: white;
 }
 .Search input:hover {
   background-color: blue;
@@ -157,6 +165,8 @@ body {
   width: 110px;
   border-radius: 10px;
   border: 3px solid rgb(126, 122, 122);
+  background-color: rgba(170, 86, 7, 0.399);
+  color: white;
 }
 .Search select:hover {
   background-color: blue;
@@ -173,6 +183,8 @@ body {
   font-weight: 600;
   cursor: pointer;
   border: 3px solid rgb(126, 122, 122);
+  background-color: rgba(170, 86, 7, 0.399);
+  color: white;
 }
 .Search button:hover {
   height: 80px;
@@ -182,4 +194,88 @@ body {
   transition: 0.5s;
   font-size: 20px;
   border-radius: 50px;
+}
+
+.feature-card {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+  gap: 50px;
+}
+.feature-card .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 250px;
+  width: 400px;
+  background-color: white;
+  gap: 30px;
+  padding: 10px;
+  border-radius: 50px;
+  box-shadow: 2px 3px 5px black;
+}
+.feature-card .card img {
+  height: 50px;
+  width: 50px;
+}
+.feature-card .card:hover {
+  background-color: blueviolet;
+  color: white;
+  transition: 0.3s;
+  padding: 30px;
+}
+
+.featured-hotels {
+  margin: 30px 20px;
+  color: white;
+  -webkit-text-stroke: 0.5px blueviolet;
+  font-size: 50px;
+}
+
+.cards {
+  display: flex;
+  flex-flow: wrap row;
+  gap: 50px;
+  justify-content: center;
+}
+.cards .subcards {
+  display: flex;
+  flex-flow: wrap column;
+  height: 400px;
+  width: 400px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 2px 2px 5px grey;
+}
+.cards .subcards .subcards-img {
+  background-image: url("./Images/Delhi.jpeg");
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+}
+.cards .subcards h2 {
+  font-size: 20px;
+  margin: 10px;
+}
+.cards .subcards h3 {
+  font-size: 15px;
+  margin-left: 10px;
+  color: grey;
+}
+.cards .subcards .facilities {
+  display: flex;
+  font-size: 15px;
+  gap: 20px;
+  margin: 10px 10px;
+  color: firebrick;
+}
+.cards .subcards .pricing {
+  display: flex;
+  margin: 20px 20px;
+  gap: 100px;
+}
+.cards .subcards .pricing span {
+  font-size: 30px;
 }/*# sourceMappingURL=style.css.map */
