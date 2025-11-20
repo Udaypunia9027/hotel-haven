@@ -11,7 +11,8 @@ body {
     font-family: "Momo Trust Display", sans-serif;
     font-weight: 400;
     font-style: normal;
-    background-image: radial-gradient(circle at 67% 83%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 1%, transparent 1%, transparent 5%, transparent 5%, transparent 100%), radial-gradient(circle at 24% 80%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 27%, transparent 27%, transparent 63%, transparent 63%, transparent 100%), radial-gradient(circle at 23% 5%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 26%, transparent 26%, transparent 82%, transparent 82%, transparent 100%), radial-gradient(circle at 21% 11%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 35%, transparent 35%, transparent 45%, transparent 45%, transparent 100%), radial-gradient(circle at 10% 11%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 21%, transparent 21%, transparent 81%, transparent 81%, transparent 100%), radial-gradient(circle at 19% 61%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 20%, transparent 20%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 13% 77%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 63%, transparent 63%, transparent 72%, transparent 72%, transparent 100%), radial-gradient(circle at 30% 93%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 33%, transparent 33%, transparent 82%, transparent 82%, transparent 100%), linear-gradient(90deg, rgb(22, 176, 207), rgb(103, 7, 215));
+    background-image: radial-gradient(circle at center center, rgba(217, 217, 217, 0.05) 0%, rgba(217, 217, 217, 0.05) 15%, rgba(197, 197, 197, 0.05) 15%, rgba(197, 197, 197, 0.05) 34%, rgba(178, 178, 178, 0.05) 34%, rgba(178, 178, 178, 0.05) 51%, rgba(237, 237, 237, 0.05) 51%, rgba(237, 237, 237, 0.05) 75%, rgba(138, 138, 138, 0.05) 75%, rgba(138, 138, 138, 0.05) 89%, rgba(158, 158, 158, 0.05) 89%, rgba(158, 158, 158, 0.05) 100%), radial-gradient(circle at center center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 6%, rgb(255, 255, 255) 6%, rgb(255, 255, 255) 12%, rgb(255, 255, 255) 12%, rgb(255, 255, 255) 31%, rgb(255, 255, 255) 31%, rgb(255, 255, 255) 92%, rgb(255, 255, 255) 92%, rgb(255, 255, 255) 97%, rgb(255, 255, 255) 97%, rgb(255, 255, 255) 100%);
+    background-size: 42px 42px;
 }
 
 .Navbar {
@@ -239,27 +240,18 @@ body {
 }
 
 .featured-hotels {
-    margin: 30px 20px;
-    color: white;
-    -webkit-text-stroke: 0.5px blueviolet;
-    font-size: 50px;
+    @include h1_style;
+}
+
+.Popular-Destinations {
+    @include h1_style;
 }
 
 .cards {
-    display: flex;
-    flex-flow: wrap row;
-    gap: 50px;
-    justify-content: center;
+    @include cards;
 
     .subcards {
-        display: flex;
-        flex-flow: wrap column;
-        height: 400px;
-        width: 400px;
-        border-radius: 10px;
-        background-color: white;
-        box-shadow: 2px 2px 5px grey;
-        cursor: pointer;
+        @include subcards;
 
         &:hover {
             margin: 20px 10px;
@@ -268,13 +260,34 @@ body {
             transform: scale(1.1);
         }
 
-        .subcards-img {
+        .subcards-img-1 {
+            @include subcards-img;
             background-image: url("./Images/Delhi.jpeg");
-            height: 200px;
-            width: 400px;
-            background-size: cover;
-            background-position: center;
-            border-radius: 10px 10px 0px 0px;
+        }
+
+        .subcards-img-2 {
+            @include subcards-img;
+            background-image: url("./Images/hote\ 2.jpeg");
+        }
+
+        .subcards-img-3 {
+            @include subcards-img;
+            background-image: url("./Images/hotel\ 3.jpeg");
+        }
+
+        .subcards-img-4 {
+            @include subcards-img;
+            background-image: url("./Images/hotel\ 4.jpeg");
+        }
+
+        .subcards-img-5 {
+            @include subcards-img;
+            background-image: url("./Images/hotel\ 5.jpeg");
+        }
+
+        .subcards-img-6 {
+            @include subcards-img;
+            background-image: url("./Images/hotel\ 6.jpeg");
         }
 
         h2 {
@@ -302,6 +315,10 @@ body {
             margin: 20px 20px;
             gap: 20px;
 
+            &:hover {
+                color: blueviolet;
+            }
+
             span {
                 font-size: 30px;
             }
@@ -327,4 +344,102 @@ body {
         }
     }
 
+}
+
+.subcards-img1 {
+    @include subcards-img;
+    height: 250px;
+    background-image: url("./Images/HOTEL\ 1.jpeg");
+}
+
+.subcards-img2 {
+    @include subcards-img;
+    height: 250px;
+    background-image: url("./Images/HOTEL\ 2.jpeg");
+}
+
+.subcards-img3 {
+    @include subcards-img;
+    height: 250px;
+    background-image: url("./Images/HOTEL\ 3\ \(3\).jpeg");
+}
+
+.subcards-img4 {
+    @include subcards-img;
+    height: 250px;
+    background-image: url("./Images/HOTEL\ 4\ \(2\).jpeg");
+}
+
+.subcards-img5 {
+    @include subcards-img;
+    height: 250px;
+    background-image: url("./Images/HOTEL\ 5\ \(2\).jpeg");
+}
+
+.subcards-img6 {
+    @include subcards-img;
+    height: 250px;
+    background-image: url("./Images/HOTEL\ 6\ \(2\).jpeg");
+}
+
+.Limited-time-offers {
+    @include h1_style;
+}
+
+
+.subcards_img1 {
+    background-image: url("./Images/Limited\ time\ offer\ 1.jpeg");
+    @include subcards-img;
+
+}
+
+.subcards_img2 {
+    background-image: url("./Images/Limited\ time\ offer\ 2.jpeg");
+    @include subcards-img;
+
+}
+
+.subcards_img3 {
+    background-image: url("./Images/Limited\ time\ offer\ 3.jpeg");
+    @include subcards-img;
+
+}
+
+.pricing-booknow {
+    margin-top: 40PX;
+    display: flex;
+    justify-content: space-around;
+    
+    .pricingS {
+        
+        color: #9305f2;
+
+        p {
+            font-size: 20px;
+
+            span {
+                text-decoration-line: line-through;
+                font-size: 15px;
+                color: grey;
+            }
+        }
+    }
+
+    button {
+        @include button_height_width(blueviolet, white, grey); 
+
+        &:hover {
+            background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+            color: $primary-color;
+            transition: 0.5s;
+            transform: scale(1.5);
+        }
+    }
+}
+
+.off {
+    background-color: #FFF800;
+    color: white;
+    text-align: center;
+    -webkit-text-stroke: 0.5px black;
 }

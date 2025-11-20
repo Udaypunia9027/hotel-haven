@@ -8,7 +8,8 @@ body {
   font-family: "Momo Trust Display", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-image: radial-gradient(circle at 67% 83%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 1%, transparent 1%, transparent 5%, transparent 5%, transparent 100%), radial-gradient(circle at 24% 80%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 27%, transparent 27%, transparent 63%, transparent 63%, transparent 100%), radial-gradient(circle at 23% 5%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 26%, transparent 26%, transparent 82%, transparent 82%, transparent 100%), radial-gradient(circle at 21% 11%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 35%, transparent 35%, transparent 45%, transparent 45%, transparent 100%), radial-gradient(circle at 10% 11%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 21%, transparent 21%, transparent 81%, transparent 81%, transparent 100%), radial-gradient(circle at 19% 61%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 20%, transparent 20%, transparent 61%, transparent 61%, transparent 100%), radial-gradient(circle at 13% 77%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 63%, transparent 63%, transparent 72%, transparent 72%, transparent 100%), radial-gradient(circle at 30% 93%, hsla(317, 0%, 96%, 0.05) 0%, hsla(317, 0%, 96%, 0.05) 33%, transparent 33%, transparent 82%, transparent 82%, transparent 100%), linear-gradient(90deg, rgb(22, 176, 207), rgb(103, 7, 215));
+  background-image: radial-gradient(circle at center center, rgba(217, 217, 217, 0.05) 0%, rgba(217, 217, 217, 0.05) 15%, rgba(197, 197, 197, 0.05) 15%, rgba(197, 197, 197, 0.05) 34%, rgba(178, 178, 178, 0.05) 34%, rgba(178, 178, 178, 0.05) 51%, rgba(237, 237, 237, 0.05) 51%, rgba(237, 237, 237, 0.05) 75%, rgba(138, 138, 138, 0.05) 75%, rgba(138, 138, 138, 0.05) 89%, rgba(158, 158, 158, 0.05) 89%, rgba(158, 158, 158, 0.05) 100%), radial-gradient(circle at center center, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 6%, rgb(255, 255, 255) 6%, rgb(255, 255, 255) 12%, rgb(255, 255, 255) 12%, rgb(255, 255, 255) 31%, rgb(255, 255, 255) 31%, rgb(255, 255, 255) 92%, rgb(255, 255, 255) 92%, rgb(255, 255, 255) 97%, rgb(255, 255, 255) 97%, rgb(255, 255, 255) 100%);
+  background-size: 42px 42px;
 }
 
 .Navbar {
@@ -234,9 +235,20 @@ body {
 
 .featured-hotels {
   margin: 30px 20px;
-  color: white;
+  color: gold;
   -webkit-text-stroke: 0.5px blueviolet;
   font-size: 50px;
+  text-decoration-line: underline;
+  text-decoration-color: blue;
+}
+
+.Popular-Destinations {
+  margin: 30px 20px;
+  color: gold;
+  -webkit-text-stroke: 0.5px blueviolet;
+  font-size: 50px;
+  text-decoration-line: underline;
+  text-decoration-color: blue;
 }
 
 .cards {
@@ -261,13 +273,53 @@ body {
   transition: 0.8s;
   transform: scale(1.1);
 }
-.cards .subcards .subcards-img {
-  background-image: url("./Images/Delhi.jpeg");
+.cards .subcards .subcards-img-1 {
   height: 200px;
   width: 400px;
   background-size: cover;
   background-position: center;
   border-radius: 10px 10px 0px 0px;
+  background-image: url("./Images/Delhi.jpeg");
+}
+.cards .subcards .subcards-img-2 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url("./Images/hote 2.jpeg");
+}
+.cards .subcards .subcards-img-3 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url("./Images/hotel 3.jpeg");
+}
+.cards .subcards .subcards-img-4 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url("./Images/hotel 4.jpeg");
+}
+.cards .subcards .subcards-img-5 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url("./Images/hotel 5.jpeg");
+}
+.cards .subcards .subcards-img-6 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  background-image: url("./Images/hotel 6.jpeg");
 }
 .cards .subcards h2 {
   font-size: 20px;
@@ -291,6 +343,9 @@ body {
   margin: 20px 20px;
   gap: 20px;
 }
+.cards .subcards .pricing:hover {
+  color: blueviolet;
+}
 .cards .subcards .pricing span {
   font-size: 30px;
 }
@@ -310,4 +365,141 @@ body {
   padding: 10px 10px;
   transition: 0.5s;
   transform: scale(1.1);
+}
+
+.subcards-img1 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  height: 250px;
+  background-image: url("./Images/HOTEL 1.jpeg");
+}
+
+.subcards-img2 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  height: 250px;
+  background-image: url("./Images/HOTEL 2.jpeg");
+}
+
+.subcards-img3 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  height: 250px;
+  background-image: url("./Images/HOTEL 3 (3).jpeg");
+}
+
+.subcards-img4 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  height: 250px;
+  background-image: url("./Images/HOTEL 4 (2).jpeg");
+}
+
+.subcards-img5 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  height: 250px;
+  background-image: url("./Images/HOTEL 5 (2).jpeg");
+}
+
+.subcards-img6 {
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+  height: 250px;
+  background-image: url("./Images/HOTEL 6 (2).jpeg");
+}
+
+.Limited-time-offers {
+  margin: 30px 20px;
+  color: gold;
+  -webkit-text-stroke: 0.5px blueviolet;
+  font-size: 50px;
+  text-decoration-line: underline;
+  text-decoration-color: blue;
+}
+
+.subcards_img1 {
+  background-image: url("./Images/Limited time offer 1.jpeg");
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.subcards_img2 {
+  background-image: url("./Images/Limited time offer 2.jpeg");
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.subcards_img3 {
+  background-image: url("./Images/Limited time offer 3.jpeg");
+  height: 200px;
+  width: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.pricing-booknow {
+  margin-top: 40PX;
+  display: flex;
+  justify-content: space-around;
+}
+.pricing-booknow .pricingS {
+  color: #9305f2;
+}
+.pricing-booknow .pricingS p {
+  font-size: 20px;
+}
+.pricing-booknow .pricingS p span {
+  text-decoration-line: line-through;
+  font-size: 15px;
+  color: grey;
+}
+.pricing-booknow button {
+  height: 40px;
+  width: 100px;
+  background-color: blueviolet;
+  color: white;
+  box-shadow: 2px 3px 5px grey;
+  font-size: larger;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.pricing-booknow button:hover {
+  background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+  color: white;
+  transition: 0.5s;
+  transform: scale(1.5);
+}
+
+.off {
+  background-color: #FFF800;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 0.5px black;
 }/*# sourceMappingURL=style.css.map */
