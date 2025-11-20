@@ -62,7 +62,6 @@ body {
 }
 .Register-signin button {
   height: 40px;
-  width: 100px;
   background-color: white;
   color: grey;
   box-shadow: 2px 3px 5px grey;
@@ -481,7 +480,6 @@ body {
 }
 .pricing-booknow button {
   height: 40px;
-  width: 100px;
   background-color: blueviolet;
   color: white;
   box-shadow: 2px 3px 5px grey;
@@ -502,4 +500,175 @@ body {
   color: white;
   text-align: center;
   -webkit-text-stroke: 0.5px black;
+}
+
+.chooseus h1 {
+  margin: 30px 20px;
+  color: gold;
+  -webkit-text-stroke: 0.5px blueviolet;
+  font-size: 50px;
+  text-decoration-line: underline;
+  text-decoration-color: blue;
+  text-align: center;
+  margin-top: 50px;
+}
+.chooseus .choose {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60px;
+}
+.chooseus .choose .choose-card {
+  display: flex;
+  flex-flow: wrap column;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+.chooseus .choose .choose-card:hover {
+  background-color: blueviolet;
+  color: white;
+  transition: 0.5s;
+  transform: scale(1.3);
+}
+.chooseus .choose .choose-card img {
+  height: 50px;
+  width: 50px;
+}
+
+.guests h1 {
+  margin: 30px 20px;
+  color: gold;
+  -webkit-text-stroke: 0.5px blueviolet;
+  font-size: 50px;
+  text-decoration-line: underline;
+  text-decoration-color: blue;
+  text-align: center;
+}
+.guests .feedback {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.guests .feedback .feedback-cards {
+  display: flex;
+  flex-flow: column;
+  height: 200px;
+  width: 300px;
+  border-radius: 20px;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+}
+.guests .feedback .feedback-cards:hover {
+  background-color: blueviolet;
+  color: white;
+  transition: 0.5s;
+  transform: scale(1.2);
+}
+.guests .feedback .feedback-cards .profile {
+  display: flex;
+  gap: 20px;
+  margin-left: 10px;
+}
+.guests .feedback .feedback-cards .profile img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  border: 1px solid grey;
+}
+.guests .feedback .feedback-cards .profile .name-place h3 {
+  color: grey;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #231557;
+  margin-top: 100px;
+  height: 350px;
+  border-radius: 50px 50px 0px 0px;
+  color: white;
+}
+footer .footer-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+footer .footer-content .footer-subcards-logo {
+  display: flex;
+  flex-flow: wrap column;
+}
+footer .footer-content .footer-subcards-logo .footer-logo {
+  display: flex;
+  align-items: baseline;
+}
+footer .footer-content .footer-subcards-logo .footer-logo img {
+  height: 50px;
+  width: 50px;
+}
+footer .footer-content .footer-subcards-logo p {
+  margin-top: 10px;
+}
+footer .footer-content .footer-subcards-Quick-Links {
+  font-size: 20px;
+}
+footer .footer-content .footer-subcards-Quick-Links ul li {
+  list-style-type: none;
+  font-size: 15px;
+}
+footer .footer-content .footer-subcards-Quick-Links ul li a {
+  text-decoration: none;
+  color: grey;
+  line-height: 3;
+  font-size: 15px;
+}
+footer .footer-content .footer-subcards-support {
+  font-size: 20px;
+}
+footer .footer-content .footer-subcards-support ul li {
+  list-style-type: none;
+  font-size: 15px;
+}
+footer .footer-content .footer-subcards-support ul li a {
+  text-decoration: none;
+  color: grey;
+  line-height: 3;
+  font-size: 15px;
+}
+footer .footer-content .footer-subcards-Newsletter {
+  font-size: 20px;
+  line-height: 1.9;
+}
+footer .footer-content .footer-subcards-Newsletter p {
+  color: grey;
+}
+footer .footer-content .footer-subcards-Newsletter input {
+  height: 50px;
+  width: 300px;
+  border-radius: 50px;
+  text-align: center;
+  font-weight: 800;
+}
+footer .footer-content .footer-subcards-Newsletter button {
+  height: 40px;
+  background-color: gold;
+  color: white;
+  box-shadow: 2px 3px 5px white;
+  font-size: larger;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 10px;
+}
+footer .footer-content .footer-subcards-Newsletter button:hover {
+  background-color: #9305f2;
+  color: white;
+  transition: 0.3s;
+  transform: scale(1.2);
+}
+footer .footer-end {
+  align-self: center;
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */
